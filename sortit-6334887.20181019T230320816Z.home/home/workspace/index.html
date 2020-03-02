@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sort It! </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id='Start'></div>
+    <h1 id='questionTheme'></h1>
+    <div id="itemBox"> </div>
+    <button class='button' onclick='showCategoryList()' id='moveItems'>Move Items</button>
+    <button onclick= "resetItems()" class="button" id="resetButton">Reset Items</button>
+    <div id="categoryBox"> </div>
+    <h1 id='progressText'>Progress:</h1>
+    <div id='progressBar'>
+      <div id='progress'></div>
+    </div>
+    <button onclick="submit()" class="button" id="submit"> Submit </button>
+    <div id="startBackground"> 
+      <div id="startContainer">
+        <h1 class="text">Sort It!</h1>
+        <button class="button" onclick="startGame()" id="startButton"> <img src="bg-spinner.gif" width="10%" height="15%" id="loading">Start Game</button>
+        <button class='button' onclick='startInfo()'>
+          <img src="baseline_info_white_18dp.png">
+          Info
+          </button>
+      </div>
+    </div>
+    <div id='end'></div>
+    <script src="sortItScript.js"> </script>
+  </body>
+</html>

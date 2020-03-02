@@ -1,0 +1,150 @@
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+html {
+  height: 100em;
+}
+body {
+  height: 100%;
+  background: linear-gradient(#00E676,#253fe6);
+  background-repeat: no-repeat;
+}
+#itemBox,
+#categoryList,
+.categoryItem {
+  display: flex;
+  justify-content: space-around;
+}
+
+#categoryBox,
+.item,
+.category,
+#categoryButton{
+  justify-content: center;
+}
+
+#itemBox {
+  width: 95%;
+  white-space: normal;
+  height: auto;
+  background-color: #1d5ec6;
+  font-size: 13px;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.item {
+  display: flex;
+  width: 7em;
+  height: 6em;
+  margin-top: 3%;
+  background-color: #b666dc;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.itemVal {
+  color: #851dc6;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+#categoryBox {
+  margin: 3%;
+  width: 95%;
+  height: auto;
+  display: flex;
+  background-color: #311dc6;
+  flex-direction:column;
+  border-radius: 5%;
+}
+.category {
+  display: flex;
+  width: auto;
+  height: 60%;
+  margin: 5%;
+  background-color: #bed724;
+  border-radius: 5%;
+}
+#categoryList {
+  width: 30%;
+  height: 150px;
+  background-color: #d2a828;
+  border: 2px solid black;
+  border-radius: 5%;
+  align-items: center;
+  flex-direction: column;
+}
+.categoryItem {
+  width: 7em;
+  height: auto;
+  background-color: #d79524;
+  text-align: center;
+  margin: 3%;
+}
+#categoryButton {
+  border: none;
+  background-color: #d22853;
+}
+
+#startContainer {
+  position: absolute;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background: linear-gradient(orange,#253fe6);
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid black;
+}
+
+.text {
+  display: block;
+}
+
+.button {
+  position: relative;
+  background-color: #311dc6;
+  border: none;
+  font-size: 20px;
+  color: #FFEB3B;
+  font-weight: bold;
+  margin: 1%;
+}
+
+#startBackground {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 0;
+  left: 0;
+  padding-bottom: 25%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+#submit {
+  left:50%;
+  transform: translateX(-50%);
+}
+#progressText,
+#progressBar,
+#questionTheme,
+#infoBoard {
+  text-align: center;
+}
+#progressBar {
+  border: 3px solid;
+  width: 100%;
+  height: 5em;
+  background-color: #7700e6;
+}
+#progress {
+  width:0%;
+  height: 5em;
+  background-color: #00e2e6;
+}
